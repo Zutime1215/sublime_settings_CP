@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+int gcd_array(vector<int>& v) {
+	int temp;
+	if (sz(v) == 1) return v[0];
+	else {
+		int ans = gcd(v[0], v[1]);
+		if (sz(v) == 2) return ans;
+		else {
+			v[1] = ans;
+			for (int i = 1; i < sz(v) - 1; i++) {
+				temp = gcd(v[i], v[i + 1]);
+				v[i + 1] = temp;
+			}
+			return v[sz(v) - 1];
+		}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gcd array</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

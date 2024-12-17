@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+typedef long long            ll;
+
+#define no cout<<"NO"<<endl
+#define yes cout<<"YES"<<endl
+#define print(s) cout<<s
+
+#define vpushfront(x, v)  v.insert(v.begin(), x)
+#define vpopfront(v)      v.erase(v.begin())
+#define vreverse(v)       reverse(v.begin(), v.end())
+#define vsort(v)          sort(v.begin(),v.end())
+
+#define vsprint(v, ws)    for (auto in:v) {cout<<in<<ws;}
+#define vsrvprint(v, ws)  for (auto out=v.rbegin();out!=v.rend();out++){cout<<*out<<ws;}
+#define sz(v)                v.size()
+
+#define _for(i, a)           for(int i=0; i<(a); i++)
+#define array_in(arr, a)  	 for (int in=0;in<a;in++) {cin >> arr[in];}
+#define array_out(arr, a) 	 for (int out=0;out<a;out++) {cout<<arr[out]<<" ";}
+#define testcase             int t;cin>>t;while(t--)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cp_cpp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
